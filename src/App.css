@@ -25,10 +25,12 @@
   font-style: normal;
 
 }
-
+body {
+  letter-spacing: 0.5px;
+}
 ul  li {
   list-style: none;
-  font-family: "poppinsregular";
+  /* font-family: "poppinsregular"; */
 }
 p{
 	line-height:1.7em;

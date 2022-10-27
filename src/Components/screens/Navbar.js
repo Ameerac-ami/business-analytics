@@ -60,9 +60,9 @@ function Navbar() {
                     <Statistics src={require('../Assets/Images/Group 11.svg').default} alt="image" />
                 </ImageContainer>
                 <Content>Power up Your Business</Content>
-                <GoButton>Go Pro ! </GoButton>
+                <GoButton>Go Pro! </GoButton>
                 <Image>
-                    <ArrowImage src={require("../Assets/Images/Arrow.svg").default} alt="arrow" />
+                    <ArrowImage src={require("../Assets/Images/Go.svg").default} alt="arrow" />
                 </Image>
            </BottomContainer>
         </Maincontainer>
@@ -140,14 +140,16 @@ const Statistics = styled.img `
 const Content = styled.p `
     font-family: "poppinsbold";
     color: #000;
-    font-size: 13px;
+    font-size: 12px;
+    text-align: center;
     width: 62%;
     margin: 5px auto 0;
 `;
 const GoButton = styled.div `
     background: #333988;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 12px;
+    font-family: 'poppinssemibold';
     padding: 9px 27px;
     border-radius: 10px;
     margin: 6px auto;
@@ -161,8 +163,9 @@ const Image = styled.div`
 `;
 const ArrowImage = styled.img`
     position: absolute;
-    display: block;
-    width: 100%;
-    top: 10px;
-    left: 10px;
+    display: inline-block;
+    width: 63%;
+    top: -28px;
+    left: 106px;
+    transform: rotate(270deg);
 `;
