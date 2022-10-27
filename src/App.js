@@ -1,14 +1,20 @@
 import './App.css';
+import styled from 'styled-components'
 import Navbar from './Components/screens/Navbar';
-import Staticts from './Components/screens/Staticts';
+import Statistics from './Components/screens/Statistics';
+import SellingProducts from './Components/screens/SellingProducts';
 
 function App() {
   return (
-    <div className="App">
-      <Staticts/>
-      <Navbar/>
-    </div>
+        <Container>
+            <Navbar/>
+            <Statistics/>
+            <SellingProducts/>
+        </Container>
   );
 }
 
 export default App;
+const Container = styled.div`
+    display: flex;
+`;

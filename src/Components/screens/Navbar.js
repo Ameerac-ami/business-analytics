@@ -61,6 +61,9 @@ function Navbar() {
                 </ImageContainer>
                 <Content>Power up Your Business</Content>
                 <GoButton>Go Pro ! </GoButton>
+                <Image>
+                    <ArrowImage src={require("../Assets/Images/Arrow.svg").default} alt="arrow" />
+                </Image>
            </BottomContainer>
         </Maincontainer>
     </>
@@ -151,4 +154,15 @@ const GoButton = styled.div `
     cursor: pointer;
     border-color: #333988;
     width: 46%;
+`;
+const Image = styled.div`
+    position: relative;
+    width: 20px;
+`;
+const ArrowImage = styled.img`
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 10px;
+    left: 10px;
 `;
