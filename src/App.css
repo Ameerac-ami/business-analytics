@@ -28,9 +28,17 @@
 body {
   letter-spacing: 0.5px;
 }
+ul {
+  padding-inline-start: 0;
+
+}
 ul  li {
   list-style: none;
-  /* font-family: "poppinsregular"; */
+}
+h2 {
+  font-weight: 500;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 p{
 	line-height:1.7em;

@@ -27,14 +27,14 @@ function Statistics() {
                     <StaticLeft>
                         <StaticItem>
                             <StaticOrder>
-                                <OrderImage src={require('../Assets/Images/Group 49.svg').default} alt="image"/>
+                                <OrderImage src={require('../Assets/Images/Group 49.svg').default} alt="image" />
                             </StaticOrder>
                             <OrderStatus>Awaiting Delivery</OrderStatus>
                             <OrderCount>150K Orders</OrderCount>
                         </StaticItem>
                         <StaticItem>
                             <StaticOrder>
-                                <OrderImage/>
+                                <OrderImage src={require('../Assets/Images/Group 49.svg').default} alt="image" />
                             </StaticOrder>
                             <OrderStatus>Awaiting Delivery</OrderStatus>
                             <OrderCount>150K Orders</OrderCount>
@@ -101,17 +101,19 @@ const MonthOption = styled.option`
     text-align: center;
 `;
 const StaticMiddleContainer = styled.div`
-    /* display: flex;
-    flex-wrap: nowrap; */
+    display: flex;
+    justify-content: space-between;
     width: 100%;
 `;
 const StaticLeft = styled.ul`
+    width: 40%;
 `;
 const StaticItem = styled.li`
     border-radius: 8px;
-    width: 50%;
+    width: 100%;
     height: 150px;
-    margin-bottom: 20px;
+    margin: 30px;
+
     &:first-child {
         background: #f5e7e4;
         
@@ -129,9 +131,15 @@ const OrderImage = styled.img`
 `;
 const OrderStatus = styled.h2`
     margin-left: 20px ;
+    font-weight: 600;
 `;
-const OrderCount = styled.h2``;
-const StaticRight = styled.div``;
+const OrderCount = styled.h2`
+    margin-left: 20px ;
+    font-weight: 600;
+`;
+const StaticRight = styled.div`
+    width: 40%;
+`;
 const GraphContainer = styled.div`
     background-image: url('../Assets/Images/Sales-graph.svg');
     background-size: 300px 100px;
