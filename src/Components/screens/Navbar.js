@@ -4,6 +4,42 @@ import { Helmet } from "react-helmet";
 
 
 function Navbar() {
+    const NavItems = [
+        {
+            title : "Summary",
+            icon : require('../Assets/Images/Book.svg').default,
+        },
+        {
+            title : "Products",
+            icon : require('../Assets/Images/slide.svg').default,
+        },
+        {
+            title : "Hot Selling",
+            icon : require('../Assets/Images/fire.svg').default,
+        },
+        {
+            title : "Manage Order",
+            icon : require('../Assets/Images/oder.svg').default,
+        },
+        {
+            title : "Payments",
+            icon : require('../Assets/Images/Wallet.svg').default,
+        },
+        {
+            title : "Settings",
+            icon : require('../Assets/Images/Settings.svg').default,
+        },
+    ];
+    const renderNavItems = () => {
+        return NavItems.map( (items) => (
+            <ListItems>
+                <ListName>{items.title}</ListName>
+                <NavIconContainer>
+                    <NavIcon src={items.icon} alt="image" />
+                </NavIconContainer>
+            </ListItems>
+        ))
+    }
   return (
     <>
         <Helmet>
@@ -17,42 +53,13 @@ function Navbar() {
            </Head>
            <NavBody>
                 <NavList>
-                    <ListItems>
+                    {renderNavItems()}
+                    {/* <ListItems>
                         <ListName>Summary</ListName>
                         <NavIconContainer>
                             <NavIcon src={require('../Assets/Images/Book.svg').default} alt="image" />
                         </NavIconContainer>
-                    </ListItems>
-                    <ListItems>
-                        <ListName>Products</ListName>
-                        <NavIconContainer>
-                            <NavIcon src={require('../Assets/Images/slide.svg').default} alt="image" />
-                        </NavIconContainer>
-                    </ListItems>
-                    <ListItems>
-                        <ListName>Hot Selling</ListName>
-                        <NavIconContainer>
-                            <NavIcon src={require('../Assets/Images/fire.svg').default} alt="image" />
-                        </NavIconContainer>
-                    </ListItems>
-                    <ListItems>
-                        <ListName>Manage Order</ListName>
-                        <NavIconContainer>
-                            <NavIcon src={require('../Assets/Images/oder.svg').default} alt="image" />
-                        </NavIconContainer>
-                    </ListItems>
-                    <ListItems>
-                        <ListName>Payments</ListName>
-                        <NavIconContainer>
-                            <NavIcon src={require('../Assets/Images/Wallet.svg').default} alt="image" />
-                        </NavIconContainer>
-                    </ListItems>
-                    <ListItems>
-                        <ListName>Settings</ListName>
-                        <NavIconContainer>
-                            <NavIcon src={require('../Assets/Images/Settings.svg').default} alt="image" />
-                        </NavIconContainer>
-                    </ListItems>
+                    </ListItems> */}
                 </NavList>
            </NavBody>
            <BottomContainer>
@@ -110,7 +117,6 @@ const ListItems = styled.li `
     color: #938e8e;
     &:hover {
         color: #333988;
-        
     }
     &:last-child  {
         margin-bottom: 0;
@@ -118,11 +124,11 @@ const ListItems = styled.li `
 `;
 const ListName = styled.h5 `
     font-family: "poppinsregular";
-    font-size: 12px;
+    font-size: 14px;
 `;
 const NavIconContainer = styled.div `
     width: 26px;
-    margin-left: 71px;
+    margin-left: 58px;
     &:last-child {
         margin-bottom: 0;
     }

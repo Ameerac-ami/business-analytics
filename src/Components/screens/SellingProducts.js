@@ -5,28 +5,28 @@ function SellingProducts() {
     const Products = [
         {
             // id : 1,
-            title : "dominoes Coffee Table Game",
+            title : "Dominoes Coffee Table Game",
             sales : " 50k Sales",
             price : "$30",
             image : require("../Assets/Images/Product-1.jpg")
         },
         {
             // id : 2,
-            title : "photive Wireless Speakers",
+            title : "Photive Wireless Speakers",
             sales : " 44k Sales",
             price : "$19",
             image : require("../Assets/Images/Product-2.jpg")
         },
         {
             // id : 3,
-            title : "urbanears Lotson Speaker",
+            title : "Urbanears Lotson Speaker",
             sales : " 42k Sales",
             price : "$79",
             image : require("../Assets/Images/Product-3.jpg")
         },
         {
             // id : 4,
-            title : "Platton 2 HeadPhones",
+            title : "Plattton 2 HeadPhones",
             sales : " 38k Sales",
             price : "$35",
             image : require("../Assets/Images/Product-4.jpg")
@@ -87,51 +87,25 @@ function SellingProducts() {
                     <Price>$30</Price>
                 </ListItems> */}
 
-                {/* <ListItems>
-                    <ProductImage>
-                        <Product src={require('../Assets/Images/Product-2.jpg')} alt="image"/>
-                    </ProductImage>
-                    <Details>
-                        <ProductName></ProductName>
-                        <Sales></Sales>
-                    </Details>
-                    <Price>$30</Price>
-                </ListItems>
-
-                <ListItems>
-                    <ProductImage>
-                        <Product src={require('../Assets/Images/Product-3.jpg')} alt="image"/>
-                    </ProductImage>
-                    <Details>
-                        <ProductName></ProductName>
-                        <Sales></Sales>
-                    </Details>
-                    <Price>$30</Price>
-                </ListItems>
-
-                <ListItems>
-                    <ProductImage>
-                        <Product src={require('../Assets/Images/Product-4.jpg')} alt="image"/>
-                    </ProductImage>
-                    <Details>
-                        <ProductName></ProductName>
-                        <Sales></Sales>
-                    </Details>
-                    <Price>$30</Price>
-                </ListItems>
-
-                <ListItems>
-                    <ProductImage>
-                        <Product src={require('../Assets/Images/Product-5.jpg')} alt="image"/>
-                    </ProductImage>
-                    <Details>
-                        <ProductName></ProductName>
-                        <Sales></Sales>
-                    </Details>
-                    <Price>$30</Price>
-                </ListItems> */}
-
             </Orders>
+            <BottomContainer>
+                <LeftContainer>
+                    <HelpContainer>
+                        <Help>What can We help you with</Help>
+                    </HelpContainer>
+                    <ChatContainer>
+                        <Chat>Chat with us</Chat>
+                        <SlideContainer>
+                            <Slide src={require("../Assets/Images/Go-Blue.svg").default} alt="arrow" />
+                        </SlideContainer>
+                    </ChatContainer>
+                </LeftContainer>
+                <RightContainer>
+                    <ChatImageContainer>
+                        <ChatImage src={require('../Assets/Images/businessman-1.svg').default} />
+                    </ChatImageContainer>
+                </RightContainer>
+            </BottomContainer>
         </MainContainer>
     </>
   )
@@ -198,35 +172,92 @@ const SeeAll = styled.span`
     font-weight: 600;
 `;
 const Orders = styled.ul`
+    padding: 20px 14px;
+
 `;
 const ListItems = styled.li`
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-bottom: 40px;
+    &:last-child {
+        margin-bottom: 0;
+    }
 `;
 const ProductImage = styled.div`
+    width: 20%;
 `;
 const Product = styled.img`
+    display: block;
+    width: 100%;
+    border-radius: 8px;
 `;
 const Details = styled.div`
+    width: 64%;
+    margin: 10px;
+
 `;
 const ProductName = styled.h4`
+    font-family: 'poppinsregular';
+    font-weight: 600;
+    margin-bottom: 9px;
+    font-size: 14px;
 `;
 const Sales = styled.small`
+    font-family: 'poppinsregular';
+    font-weight: 600;
+    font-size: 11px;
 `;
 const Price = styled.h4`
+    width: 10%;
+    margin-top: 6px;
 `;
-// const SeeAll = styled.span`
-// `;
-// const SeeAll = styled.span`
-// `;
-// const SeeAll = styled.span`
-// `;
-// const SeeAll = styled.span`
-// `;
-// const SeeAll = styled.span`
-// `;
-// const SeeAll = styled.span`
-// `;
-// const SeeAll = styled.span`
-// `;
-// const SeeAll = styled.span`
-// `;
+const BottomContainer = styled.div`
+    display: flex;
+    padding: 43px 14px;
+`;
+const LeftContainer = styled.div`
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 51%;
+`;
+const HelpContainer = styled.div`
+    width: 100%;
+`;
+const Help = styled.h3`
+    font-family: "poppinsregular";
+    line-height: 1.5em;
+`;
+const ChatContainer = styled.div`
+    display: flex;
+    /* justify-content: center; */
+`;
+const Chat = styled.h4`
+    font-family: "poppinsregular";
+    color: #3c418d;
+`;
+const SlideContainer = styled.div`
+    width: 18px;
+    margin-left: 10px;
+`;
+const Slide = styled.img`
+    width: 100%;
+    display: block;
+    transform: rotate(270deg);
+`;
+const RightContainer = styled.div`
+    width: 49%;
+    display: flex;
+    flex-direction: column-reverse;
+`;
+const ChatImageContainer = styled.div`
+    width: 79%;
+    margin-top: 41px;
+`;
+const ChatImage = styled.img`
+    width: 100%;
+    display: block;
+`;
 

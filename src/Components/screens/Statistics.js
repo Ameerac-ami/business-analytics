@@ -197,6 +197,8 @@ const Heading = styled.h3`
     font-family: "poppinsregular";
     font-size: 18px;
     font-weight: 700;
+    width: 55%;
+    line-height: 1.5em;
 `;
 const PersonHead = styled.div``;
 const Person = styled.img``;
