@@ -76,14 +76,19 @@ const Maincontainer = styled.section `
     padding: 24px;
     width: 20%;
     border-right: 1px solid #d8d5d5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 `;
 const Head = styled.header `
     display: flex;
     justify-content: flex-start;
+    padding: 16px ;
 `;
 const IconContainer = styled.div `
-    width: 38%;
+    width: 58%;
     margin: 0 41px;
+    
 `;
 const Icon = styled.img `
     width: 100%;
@@ -91,6 +96,8 @@ const Icon = styled.img `
 `;
 const NavBody = styled.div `
     display: flex;
+    padding: 24px;
+    height: 70%;
 `;
 const NavList = styled.ul `
 `;
@@ -98,20 +105,23 @@ const ListItems = styled.li `
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 36px;
+    cursor: pointer;
     color: #938e8e;
     &:hover {
         color: #333988;
+        
     }
     &:last-child  {
         margin-bottom: 0;
     }
 `;
 const ListName = styled.h5 `
-    font-family: "poppinssemibold";
-    /* color: #938e8e; */
+    font-family: "poppinsregular";
+    font-size: 12px;
 `;
 const NavIconContainer = styled.div `
-    width: 20px;
+    width: 26px;
     margin-left: 71px;
     &:last-child {
         margin-bottom: 0;
@@ -124,13 +134,13 @@ const NavIcon = styled.img `
 const BottomContainer = styled.div `
     padding: 11px;
     background: #f1f1f3;
-    width: 60%;
-    height: 56vh;
+    width: 70%;
+    height: 30vh;
     border-radius: 7px;
     margin: 0 auto;
 `;
 const ImageContainer = styled.div `
-    width: 69%;
+    width: 75%;
     margin: 10px auto 0;
 `;
 const Statistics = styled.img `

@@ -42,12 +42,28 @@ function Statistics() {
                     </StaticLeft>
                     <StaticRight>
                         <GraphContainer>
-                            <SalesHeading>Sales last 6 months</SalesHeading>
-                            <SalesCount>$14500.89K</SalesCount>
+                            <SalesGraph>
+                                <Graph src={require('../Assets/Images/Sales-graph.svg').default} alt="image" />
+                            </SalesGraph>
+                            {/* <SalesHeading>Sales last 6 months</SalesHeading>
+                            <SalesCount>$14500.89K</SalesCount> */}
                         </GraphContainer>
                     </StaticRight>
-                    
                 </StaticMiddleContainer> 
+                <StaticBottomContainer>
+                    <StaticBottomLeft>
+                        <LeftHeading>Create Ads for Your Business</LeftHeading>
+                        <AdImage>
+                            <Image src={require('../Assets/Images/Group 52.svg').default} alt="image" />
+                        </AdImage>
+                    </StaticBottomLeft>
+                    <StaticBottomRight>
+                        <Heading>Secure Your Payments</Heading>
+                        <PersonHead>
+                            <Person src={require('../Assets/Images/businessman-svgrepo-2.svg').default} alt="image" />
+                        </PersonHead>
+                    </StaticBottomRight>
+                </StaticBottomContainer>
             </MainContainer>
         </>
     )
@@ -56,7 +72,7 @@ function Statistics() {
 export default Statistics
 const MainContainer = styled.section`
     padding: 24px;
-    width: 43%;
+    width: 50%;
 `;
 const SearchContainer = styled.form`
     position: relative;
@@ -77,7 +93,7 @@ const SearchIcon = styled.img`
     right: 7%;
 `;
 const HeadingContainer = styled.div`
-    margin: 13px 13px 0;
+    padding: 41px 13px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,17 +118,16 @@ const MonthOption = styled.option`
 `;
 const StaticMiddleContainer = styled.div`
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-around;
+    align-items: center;
 `;
 const StaticLeft = styled.ul`
-    width: 40%;
+    width: 46%;
 `;
 const StaticItem = styled.li`
-    border-radius: 8px;
-    width: 100%;
-    height: 150px;
-    margin: 30px;
+    border-radius: 13px;
+    height: 147px;
+    margin: 26px 20px;
 
     &:first-child {
         background: #f5e7e4;
@@ -123,33 +138,66 @@ const StaticItem = styled.li`
     }
 `;
 const StaticOrder = styled.div`
-    width: 50px;
+    width: 46px;
 `;
 const OrderImage = styled.img`
     width: 100%;
     display: block;
 `;
-const OrderStatus = styled.h2`
-    margin-left: 20px ;
+const OrderStatus = styled.h3`
+    margin-left: 23px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     font-weight: 600;
+    font-family: "poppinsregular";
 `;
 const OrderCount = styled.h2`
-    margin-left: 20px ;
+    margin-left: 23px ;
     font-weight: 600;
+    font-family: "poppinssemibold";
 `;
 const StaticRight = styled.div`
-    width: 40%;
+    width: 43%;
 `;
 const GraphContainer = styled.div`
-    background-image: url('../Assets/Images/Sales-graph.svg');
-    background-size: 300px 100px;
-    background-repeat: no-repeat;
 `;
-const SalesHeading = styled.h2``;
-const SalesCount = styled.h2``;
-
-// const MainContainer = styled.section``;
-
-// const MainContainer = styled.section``;
-// const MainContainer = styled.section``;
+const SalesGraph = styled.div`
+    width: 100%;
+`;
+const Graph = styled.img`
+    width: 100%;
+    display: block;
+    border-radius: 13px;
+`;
+const StaticBottomContainer = styled.div`
+    padding: 40px 31px;
+    display: flex;
+    justify-content: center;
+`;
+const StaticBottomLeft = styled.div`
+    
+`;
+const LeftHeading = styled.h3`
+    font-family: "poppinsregular";
+    font-size: 18px;
+    font-weight: 700;
+    width: 70%;
+    line-height: 1.5em;
+`;
+const AdImage = styled.div`
+    margin: 27px 0 0 35px;
+`;
+const Image = styled.img``;
+const StaticBottomRight = styled.div`
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+`;
+const Heading = styled.h3`
+    font-family: "poppinsregular";
+    font-size: 18px;
+    font-weight: 700;
+`;
+const PersonHead = styled.div``;
+const Person = styled.img``;
 // const MainContainer = styled.section``;
