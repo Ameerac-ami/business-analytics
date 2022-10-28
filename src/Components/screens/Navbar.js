@@ -1,7 +1,7 @@
 import React, {useState , useEffect} from 'react'
 import styled from 'styled-components'
 import { Helmet } from "react-helmet";
-
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const NavItems = [
@@ -12,28 +12,33 @@ function Navbar() {
         {
             title : "Products",
             icon : require('../Assets/Images/slide.svg').default,
+            Link : "/products"
         },
         {
             title : "Hot Selling",
             icon : require('../Assets/Images/fire.svg').default,
+            Link : "/hotselling"
         },
         {
             title : "Manage Order",
             icon : require('../Assets/Images/oder.svg').default,
+            Link : "/manageorder"
         },
         {
             title : "Payments",
             icon : require('../Assets/Images/Wallet.svg').default,
+            Link : "/payments"
         },
         {
             title : "Settings",
             icon : require('../Assets/Images/Settings.svg').default,
+            Link : "/settings"
         },
     ];
     const renderNavItems = () => {
         return NavItems.map( (items) => (
-            <ListItems>
-                <ListName>{items.title}</ListName>
+            <ListItems className={({isActive}) => isActive ? "active" : ""}>
+                <ListName to={items.Link} >{items.title}</ListName>
                 <NavIconContainer>
                     <NavIcon src={items.icon} alt="image" />
                 </NavIconContainer>
@@ -113,18 +118,25 @@ const ListItems = styled.li `
     justify-content: space-between;
     align-items: center;
     margin-bottom: 36px;
-    cursor: pointer;
-    color: #938e8e;
+    /* cursor: pointer; */
+    /* color: #938e8e;
     &:hover {
         color: #333988;
-    }
+    } */
     &:last-child  {
         margin-bottom: 0;
     }
 `;
-const ListName = styled.h5 `
+const ListName = styled(Link)`
     font-family: "poppinsregular";
     font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #938e8e;
+    font-weight: 600;
+    &:hover {
+        color: #333988;
+    }
 `;
 const NavIconContainer = styled.div `
     width: 26px;

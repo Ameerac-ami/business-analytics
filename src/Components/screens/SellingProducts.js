@@ -200,7 +200,7 @@ const Details = styled.div`
 const ProductName = styled.h4`
     font-family: 'poppinsregular';
     font-weight: 600;
-    margin-bottom: 9px;
+    margin-bottom: 3px;
     font-size: 14px;
 `;
 const Sales = styled.small`
