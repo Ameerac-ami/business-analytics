@@ -8,15 +8,16 @@ export default function Settings() {
     </Container>
   )
 }
+
 const Container =styled.section`
     height: 100vh;
     background: #000;
 `;
-
 const Title = styled.h1`
   font-size: 40px;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
+  width: 50%;
   margin: 0 auto;
 `;

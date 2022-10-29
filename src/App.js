@@ -9,6 +9,7 @@ import Settings from './Components/screens/Settings';
 import Orders from './Components/screens/Orders';
 import Payments from './Components/screens/Payments';
 import Products from './Components/screens/Products';
+import Dashboard from './Components/screens/Dashboard';
 
 function App() {
   return (
@@ -19,9 +20,10 @@ function App() {
                     path='/'
                     element= {
                         <Container>
-                            <Navbar/>
+                            {<Dashboard/> }
+                            {/* <Navbar/>
                             <Statistics/>
-                            <SellingProducts/>
+                            <SellingProducts/> */}
                         </Container>
                     }
                 />
