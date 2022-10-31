@@ -21,7 +21,7 @@ function Navbar() {
       title: "Hot Selling",
       icon: require("../Assets/Images/fire.svg")
         .default,
-      Link: "/hotselling",
+      //   Link: "/hotselling",
     },
     {
       title: "Manage Order",
@@ -76,9 +76,7 @@ function Navbar() {
           </IconContainer>
         </Head>
         <NavBody>
-          <NavList>
-            {renderNavItems()}
-          </NavList>
+          <NavList>{renderNavItems()}</NavList>
         </NavBody>
         <BottomContainer>
           <ImageContainer>
@@ -155,6 +153,10 @@ const ListItems = styled.li`
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media all and (max-width :1080px) {
+    margin-bottom: 31px;
+  }
 `;
 const ListName = styled(Link)`
   font-family: "poppinsregular";
@@ -166,12 +168,19 @@ const ListName = styled(Link)`
   &:hover {
     color: #333988;
   }
+  @media all and (max-width : 1080px) {
+    font-size: 12px;
+  }
 `;
 const NavIconContainer = styled.div`
   width: 26px;
   margin-left: 58px;
   &:last-child {
     margin-bottom: 0;
+  }
+  @media all and (max-width: 1080px) {
+    width: 20px;
+    margin-left: 39px;
   }
 `;
 const NavIcon = styled.img`
@@ -185,6 +194,10 @@ const BottomContainer = styled.div`
   height: 30vh;
   border-radius: 7px;
   margin: 281px auto 0 auto;
+
+  @media all and (max-width: 1080px) {
+    margin: 182px auto 0 auto;
+  }
 `;
 const ImageContainer = styled.div`
   width: 75%;

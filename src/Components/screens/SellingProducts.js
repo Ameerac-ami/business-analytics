@@ -205,6 +205,10 @@ const SubHead = styled.div`
 `;
 const LeftHeading = styled.h3`
   font-family: "poppinsregular";
+
+  @media all and (max-width : 1080px) {
+    font-size: 1.2em;
+  }
 `;
 const SeeAll = styled.span`
   font-family: "poppinsregular";
@@ -233,17 +237,30 @@ const Product = styled.img`
 const Details = styled.div`
   width: 64%;
   margin: 10px;
+
+  @media all and (max-width:1080px) {
+     margin: 0;
+  }
 `;
 const ProductName = styled.h4`
   font-family: "poppinsregular";
   font-weight: 600;
   margin-bottom: 3px;
   font-size: 14px;
+
+  @media all and (max-width : 1080px) {
+    margin-bottom: 0; 
+    font-size: 11px;
+  }
 `;
 const Sales = styled.small`
   font-family: "poppinsregular";
   font-weight: 600;
   font-size: 11px;
+
+  @media all and (max-width : 1080px) {
+    font-size: 9px;
+  }
 `;
 const Price = styled.h4`
   width: 10%;
@@ -265,6 +282,10 @@ const Help = styled.h3`
   line-height: 1.5em;
   width: 100%;
   font-size: 18px;
+
+  @media all and (max-width:1080px){
+    font-size: 13px;
+  }
 `;
 const ChatContainer = styled(Link)`
   display: flex;
@@ -275,10 +296,19 @@ const ChatContainer = styled(Link)`
 const ChatPop = styled.h4`
   font-family: "poppinsregular";
   color: #3c418d;
+
+  @media all and (max-width: 1080px) {
+    font-size: 12px;
+  }
 `;
 const SlideContainer = styled.div`
   width: 18px;
   margin-left: 10px;
+
+  @media all and (max-width: 1080px) {
+    margin-left: 6px;
+    width: 13px;
+  }
 `;
 const Slide = styled.img`
   width: 100%;

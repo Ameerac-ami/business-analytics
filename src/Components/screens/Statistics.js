@@ -150,6 +150,11 @@ const SearchBar = styled.input`
   width: 92%;
   margin-left: 27px;
   border-radius: 9px;
+
+  @media all and (max-width: 1080px) {
+    width: 87%;
+    margin-left: 30px;
+  }
 `;
 const SearchIcon = styled.img`
   position: absolute;
@@ -166,6 +171,10 @@ const HeadingContainer = styled.div`
 `;
 const LeftMainHeading = styled.h2`
   font-family: "poppinssemibold";
+
+  @media all and (max-width: 1080px) {
+    font-size : 1.3em;
+  }
 `;
 const RightHeading = styled.form``;
 const MonthSelect = styled.select`
@@ -201,6 +210,10 @@ const StaticItem = styled.li`
   &:nth-child(2) {
     background: #e6f4ff;
   }
+
+  @media all and (max-width : 1080px) {
+    height: 119px;
+  }
 `;
 const DeliveryStatic = styled.div`
   position: absolute;
@@ -212,6 +225,12 @@ const StaticOrder = styled.div`
   position: absolute;
   top: 12px;
   left: 23px;
+
+  @media all and (max-width: 1080px) {
+    width: 36px;
+    top: 8px;
+    left: 10px;
+  }
 `;
 const OrderImage = styled.img`
   width: 100%;
@@ -223,6 +242,11 @@ const OrderStatus = styled.h3`
   margin-bottom: 5px;
   font-weight: 600;
   font-family: "poppinsregular";
+  
+  @media all and  (max-width : 1080px) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 `;
 const OrderCount = styled.h2`
   margin-left: 23px;
