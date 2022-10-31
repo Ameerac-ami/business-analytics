@@ -137,8 +137,10 @@ const MainContainer = styled.section`
   left: 23%;
   top: 3%;
 
-  @media all and (max-width:768px) {
-    width: 70%;
+  @media all and (max-width: 768px) {
+    width: 74%;
+    padding: 20px 0 0 0;
+    left: 26%;
   }
 `;
 const SearchContainer = styled.form`
@@ -159,6 +161,9 @@ const SearchBar = styled.input`
     width: 87%;
     margin-left: 30px;
   }
+  @media all and (max-width: 768px) {
+    padding: 9px 17px;
+  }
 `;
 const SearchIcon = styled.img`
   position: absolute;
@@ -166,6 +171,9 @@ const SearchIcon = styled.img`
   display: inline-block;
   top: 12px;
   right: 8%;
+  @media all and (max-width: 768px) {
+    right: 12%;
+  }
 `;
 const HeadingContainer = styled.div`
   padding: 38px 18px 0;
@@ -175,6 +183,9 @@ const HeadingContainer = styled.div`
 
   @media all and (max-width: 1080px) {
     padding: 38px 25px 0;
+  }
+  @media all and (max-width: 768px) {
+    padding-top: 22px;
   }
 `;
 const LeftMainHeading = styled.h2`
@@ -203,16 +214,25 @@ const StaticMiddleContainer = styled.div`
   width: 97%;
   align-items: center;
   margin: 0 auto;
+  @media all and (max-width:480px) {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 `;
 const StaticLeft = styled.ul`
   width: 51%;
+  @media all and (max-width:480px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 const StaticItem = styled.li`
   border-radius: 13px;
   height: 139px;
   margin: 26px 0 26px 15px;
   position: relative;
-
   &:first-child {
     background: #f5e7e4;
   }
@@ -223,6 +243,10 @@ const StaticItem = styled.li`
   @media all and (max-width: 1080px) {
     height: 119px;
     margin: 14px 20px;
+  }
+  @media all and (max-width: 480px) {
+    width: 45%;
+    margin: 10px;
   }
 `;
 const DeliveryStatic = styled.div`
@@ -241,6 +265,10 @@ const StaticOrder = styled.div`
     top: 8px;
     left: 10px;
   }
+  @media all and (max-width: 768px) {
+    top: 10px;
+    left: 28px;
+  }
 `;
 const OrderImage = styled.img`
   width: 100%;
@@ -258,6 +286,9 @@ const OrderStatus = styled.h3`
     margin-bottom: 0;
     font-size: 16px;
   }
+  @media all and (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 const OrderCount = styled.h2`
   margin-left: 23px;
@@ -270,10 +301,20 @@ const OrderCount = styled.h2`
 `;
 const StaticRight = styled.div`
   width: 42%;
+
+  @media all and (max-width:480px) {  
+    width: 60%;
+    margin: 0 auto;
+
+  }
 `;
 const GraphContainer = styled.div``;
 const SalesGraph = styled.div`
   width: 100%;
+
+  @media all and (max-width: 768px) {
+    width: 87%;
+  }
 `;
 const Graph = styled.img`
   width: 100%;
@@ -284,6 +325,12 @@ const StaticBottomContainer = styled.div`
   padding: 30px 31px 0;
   display: flex;
   justify-content: center;
+
+  @media all and (max-width: 768px) {
+    padding-left: 49px;
+    padding-top: 19px;
+    padding-bottom: 10px;
+  }
 `;
 const StaticBottomLeft = styled.div``;
 const LeftHeading = styled.h3`
@@ -304,6 +351,9 @@ const AdImage = styled.div`
 
   @media all and (max-width: 1080px) {
     width: 37%;
+  }
+  @media all and (max-width: 768px) {
+    width: 33%;
   }
 `;
 const Image = styled.img`
@@ -331,6 +381,9 @@ const PersonHead = styled.div`
 
   @media all and (max-width: 1080px) {
     width: 56%;
+  }
+  @media all and (max-width: 768px) {
+    width: 51%;
   }
 `;
 const Person = styled.img`

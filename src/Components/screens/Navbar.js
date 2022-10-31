@@ -123,6 +123,7 @@ const Maincontainer = styled.section`
 
   @media all and (max-width: 768px) {
     padding: 22px 8px 0 8px;
+    width: 24%;
   }
 `;
 const Head = styled.header`
@@ -189,6 +190,9 @@ const ListName = styled(Link)`
   @media all and (max-width: 1080px) {
     font-size: 12px;
   }
+  @media all and (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 const NavIconContainer = styled.div`
   width: 26px;
@@ -217,8 +221,15 @@ const BottomContainer = styled.div`
   margin: 152px auto 0 auto;
 
   @media all and (max-width: 1080px) {
-    margin: 105px auto 0 auto;
+    margin-top: 105px;
   }
+  @media all and (max-width: 768px) {
+    margin-top: 80px;
+  }
+  @media all and (max-width: 480px) {
+    display:none;
+  }
+
 `;
 const ImageContainer = styled.div`
   width: 75%;
@@ -242,6 +253,9 @@ const Content = styled.p`
 
   @media all and (max-width: 1080px) {
     width: 67%;
+  }
+  @media all and (max-width: 768px) {
+    width: 74%;
   }
 `;
 const GoButton = styled.div`
@@ -280,5 +294,9 @@ const ArrowImage = styled.img`
   @media all and (max-width: 1080px) {
     top: -28px;
     left: 91px;
+  }
+  @media (max-width: 768px) {
+    top: -29px;
+    left: 88px;
   }
 `;
