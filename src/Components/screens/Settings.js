@@ -1,23 +1,29 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 export default function Settings() {
   return (
     <Container>
-        <Title>We are working on our new site...! Stay Tuned.....</Title>
+      <Title>
+        Currently Unavailable...! Stay Tuned.....
+      </Title>
     </Container>
-  )
+  );
 }
 
-const Container =styled.section`
-    height: 100vh;
-    background: #000;
+const Container = styled.section`
+  position: absolute;
+  top: 0;
+  left: 22.5%;
+  width: 47%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
 `;
 const Title = styled.h1`
   font-size: 40px;
   font-weight: 700;
-  color: #ffffff;
   text-align: center;
-  width: 50%;
   margin: 0 auto;
+  width: 73%;
 `;
