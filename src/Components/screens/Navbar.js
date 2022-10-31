@@ -21,7 +21,7 @@ function Navbar() {
       title: "Hot Selling",
       icon: require("../Assets/Images/fire.svg")
         .default,
-      //   Link: "/hotselling",
+      Link: "/sellingproducts",
     },
     {
       title: "Manage Order",
@@ -125,6 +125,9 @@ const Maincontainer = styled.section`
     padding: 22px 8px 0 8px;
     width: 24%;
   }
+  @media all and (max-width: 480px) {
+    display: none;
+  }
 `;
 const Head = styled.header`
   display: flex;
@@ -227,9 +230,8 @@ const BottomContainer = styled.div`
     margin-top: 80px;
   }
   @media all and (max-width: 480px) {
-    display:none;
+    display: none;
   }
-
 `;
 const ImageContainer = styled.div`
   width: 75%;
@@ -297,6 +299,8 @@ const ArrowImage = styled.img`
   }
   @media (max-width: 768px) {
     top: -29px;
-    left: 88px;
+    left: 79px;
+  }
+  @media (max-width: 640px) {
   }
 `;

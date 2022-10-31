@@ -1,19 +1,8 @@
 // import React from 'react'
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import "./Chat.css";
-// import Image from "../../Assets/Images/person.jpg";
-import Arrow from "../../Assets/Images/Arrow.svg";
 
-function Chat({ isModal, setModal }) {
-
-  // useEffect (() => {
-  //   if (isModal) {
-  //     $("html").addClass("modal-enabled");
-  //   } else {
-  //     $("html").removeClass("modal-enabled");
-  //   }
-  // }, [isModal]);
-
+function Chat() {
   const humanMessage = useRef();
   const botmessage = useRef();
   const input = useRef();
@@ -282,7 +271,6 @@ function Chat({ isModal, setModal }) {
 
   return (
     <div className="App" onLoad={checkStatus}>
-      {/* <Overlay onClick={()=> setModal(false) }></Overlay> */}
       <div className="content">
         <div className="header">
           <div className="title">
@@ -296,13 +284,18 @@ function Chat({ isModal, setModal }) {
               <div className="name">ChatBot</div>
               <div className="status">Active</div>
             </div>
+            <div className="person">
+              <img
+                exact
+                to={"/products"}
+                src={
+                  require("../../Assets/Images/Arrow.svg")
+                    .default
+                }
+                alt="arrow"
+              />
+            </div>
           </div>
-          <img
-            exact
-            to={"/products"}
-            src={Arrow}
-            alt="arrow"
-          />
         </div>
         <div className="main">
           <div className="main_content">

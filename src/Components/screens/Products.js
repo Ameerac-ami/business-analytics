@@ -1,9 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import Nav from "./Nav";
+
 
 export default function Products() {
   return (
     <Container>
+       <HeaderContainer>
+        <NavBar>
+          <Nav />
+        </NavBar>
+      </HeaderContainer>
       <Title>
         Currently Unavailable...! Stay Tuned.....
       </Title>
@@ -22,7 +29,22 @@ const Container = styled.section`
     left: 26%;
     width: 74%;
   }
+  @media all and (max-width:480px) {
+    left: 0px;
+    width: 94%;
+    padding: 22px;
+  }
 `;
+const HeaderContainer = styled.header`
+  display: none;
+  @media all and (max-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+`;
+const NavBar = styled.div``;
 const Title = styled.h1`
   /* font-size: ; */
   font-weight: 700;

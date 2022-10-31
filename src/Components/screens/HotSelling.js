@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-function SellingProducts() {
+function HotSelling() {
   const Products = [
     {
       title: "Dominoes Coffee Table Game",
@@ -132,7 +132,7 @@ function SellingProducts() {
   );
 }
 
-export default SellingProducts;
+export default HotSelling;
 const MainContainer = styled.section`
   background: #f1f1f3;
   width: 29%;
@@ -142,7 +142,8 @@ const MainContainer = styled.section`
   right: 0;
 
   @media all and (max-width: 768px) {
-    display: none;
+    width: 70.3%;
+    padding-top: 20px;
   }
 `;
 const Head = styled.header`
@@ -195,7 +196,10 @@ const LeftHeading = styled.h3`
   font-family: "poppinsregular";
 
   @media all and (max-width: 1080px) {
-    font-size: 1.2em;
+    font-size: 20px;
+  }
+  @media (max-width: 768px) {
+    font-size: 18px;
   }
 `;
 const SeeAll = styled.span`
@@ -233,6 +237,9 @@ const Details = styled.div`
   @media all and (max-width: 1080px) {
     margin: 0;
   }
+  @media all and (max-width: 768px) {
+    margin-top: 17px;
+  }
 `;
 const ProductName = styled.h4`
   font-family: "poppinsregular";
@@ -243,6 +250,9 @@ const ProductName = styled.h4`
   @media all and (max-width: 1080px) {
     margin-bottom: 0;
     font-size: 11px;
+  }
+  @media all and (max-width: 768px) {
+    font-size: 16px;
   }
 `;
 const Sales = styled.small`

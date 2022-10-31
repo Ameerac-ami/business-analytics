@@ -22,7 +22,7 @@ const Navbar = () => {
         <MenuLink to="/hotselling">
           Hot Selling
         </MenuLink>
-        <MenuLink to="/orders">
+        <MenuLink to="/manageorder">
           Manage Order
         </MenuLink>
         <MenuLink to="/payments">
@@ -43,7 +43,7 @@ const MenuLink = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   color: #323988;
-  font-family: "Poppins-bold";
+  font-family: "Poppinsbold";
   transition: all 0.5s ease-in;
   font-size: 14px;
 `;
@@ -58,6 +58,9 @@ const Nav = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  @media all and (max-width: 480px) {
+    padding: 18px 0 0 3px;
+  }
 `;
 
 const Menu = styled.div`
@@ -79,20 +82,26 @@ const Menu = styled.div`
 
 const Hamburger = styled.div`
   display: none;
-
   flex-direction: column;
   cursor: pointer;
-
   span {
     height: 4px;
     width: 30px;
     background: #323988;
     margin-bottom: 5px;
     border-radius: 5px;
+    @media all and (max-width: 360px) {
+      height: 3px;
+      width: 28px;
+    }
   }
 
   @media all and (max-width: 980px) {
     display: flex;
     margin-top: 20px;
+  }
+  @media all and (max-width: 360px) {
+    margin-top: 26px;
+    margin-left: 10px;
   }
 `;

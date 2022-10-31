@@ -157,9 +157,13 @@ const MainContainer = styled.section`
     padding: 20px 0 0 0;
     left: 26%;
   }
+  @media all and (max-width: 480px) {
+    width: 97%;
+    left: 2%;
+  }
 `;
 const HeaderContainer = styled.header`
- display: none;
+  display: none;
   @media all and (max-width: 480px) {
     display: flex;
     justify-content: space-between;
@@ -169,14 +173,13 @@ const HeaderContainer = styled.header`
 `;
 const NavBar = styled.div``;
 const BusinessLogo = styled.div`
-@media all and (max-width: 480px){
+  @media all and (max-width: 480px) {
     width: 50%;
-}
-    
+  }
 `;
 const LogoImage = styled.img`
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 `;
 const SearchContainer = styled.form`
   position: relative;
@@ -199,6 +202,9 @@ const SearchBar = styled.input`
   @media all and (max-width: 768px) {
     padding: 9px 17px;
   }
+  @media all and (max-width: 360px) {
+    margin-left: 19px;
+  }
 `;
 const SearchIcon = styled.img`
   position: absolute;
@@ -209,6 +215,12 @@ const SearchIcon = styled.img`
   @media all and (max-width: 768px) {
     right: 12%;
   }
+
+  @media all and  (max-width: 360px){
+    top: 9px;
+  }
+
+
 `;
 const HeadingContainer = styled.div`
   padding: 38px 18px 0;
@@ -221,6 +233,12 @@ const HeadingContainer = styled.div`
   }
   @media all and (max-width: 768px) {
     padding-top: 22px;
+  }
+  @media all and (max-width: 640px) {
+    padding-bottom: 20px;
+  }
+  @media all and (max-width: 360px) {
+    padding-bottom: 0;
   }
 `;
 const LeftMainHeading = styled.h2`
@@ -249,18 +267,28 @@ const StaticMiddleContainer = styled.div`
   width: 97%;
   align-items: center;
   margin: 0 auto;
+  @media all and (max-width: 640px) {
+    flex-direction: column-reverse;
+  }
   @media all and (max-width: 480px) {
     width: 100%;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
+    padding-top: 21px;
   }
 `;
 const StaticLeft = styled.ul`
   width: 51%;
+  @media all and (max-width: 640px) {
+    width: 87%;
+  }
   @media all and (max-width: 480px) {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  @media all and (max-width: 360px) {
+    flex-direction: column;
   }
 `;
 const StaticItem = styled.li`
@@ -283,11 +311,23 @@ const StaticItem = styled.li`
     width: 45%;
     margin: 10px;
   }
+  @media all and (max-width: 360px) {
+    width: 60%;
+    height: 106px;
+  }
 `;
 const DeliveryStatic = styled.div`
   position: absolute;
   top: 43px;
   left: 5px;
+  @media all and (max-width: 640px) {
+    top: 46px;
+    left: 46px;
+  }
+  @media all and (max-width: 360px) {
+    left: 8px;
+    text-align: center;
+  }
 `;
 const StaticOrder = styled.div`
   width: 46px;
@@ -303,6 +343,12 @@ const StaticOrder = styled.div`
   @media all and (max-width: 768px) {
     top: 10px;
     left: 28px;
+  }
+  @media all and (max-width: 640px) {
+    left: 112px;
+  }
+  @media all and (max-width: 360px) {
+    left: 72px;
   }
 `;
 const OrderImage = styled.img`
@@ -324,6 +370,9 @@ const OrderStatus = styled.h3`
   @media all and (max-width: 768px) {
     font-size: 14px;
   }
+  @media all and(max-width: 480px) {
+    font-size: 10px;
+  }
 `;
 const OrderCount = styled.h2`
   margin-left: 23px;
@@ -333,10 +382,16 @@ const OrderCount = styled.h2`
   @media all and (max-width: 1080px) {
     font-size: 19px;
   }
+  @media (max-width: 360px) {
+    font-size: 15px;
+  }
 `;
 const StaticRight = styled.div`
   width: 42%;
 
+  @media all and (max-width: 640px) {
+    width: 66%;
+  }
   @media all and (max-width: 480px) {
     width: 60%;
     margin: 0 auto;
@@ -347,7 +402,14 @@ const SalesGraph = styled.div`
   width: 100%;
 
   @media all and (max-width: 768px) {
-    width: 87%;
+    width: 100%;
+  }
+  @media all and (max-width: 480px) {
+    width: 76%;
+    margin: 0 auto;
+  }
+  @media all and (max-width: 360px) {
+    width: 100%;
   }
 `;
 const Graph = styled.img`
@@ -377,6 +439,10 @@ const LeftHeading = styled.h3`
   @media all and (max-width: 1080px) {
     font-size: 17px;
     width: 79%;
+  }
+  @media all and (max-width: 360px) {
+    font-size: 12px;
+    width: 81%;
   }
 `;
 const AdImage = styled.div`
@@ -409,6 +475,10 @@ const Heading = styled.h3`
   @media all and (max-width: 1080px) {
     width: 70%;
   }
+  @media all and (max-width: 360px) {
+    font-size: 12px;
+    width: 87%;
+  }
 `;
 const PersonHead = styled.div`
   width: 60%;
@@ -418,6 +488,9 @@ const PersonHead = styled.div`
   }
   @media all and (max-width: 768px) {
     width: 51%;
+  }
+  @media all and (max-width: 360px) {
+    width: 42%;
   }
 `;
 const Person = styled.img`
