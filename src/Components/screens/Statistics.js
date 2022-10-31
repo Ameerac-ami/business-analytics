@@ -213,6 +213,7 @@ const StaticItem = styled.li`
 
   @media all and (max-width : 1080px) {
     height: 119px;
+    margin: 14px 20px;
   }
 `;
 const DeliveryStatic = styled.div`
@@ -242,16 +243,21 @@ const OrderStatus = styled.h3`
   margin-bottom: 5px;
   font-weight: 600;
   font-family: "poppinsregular";
-  
+
   @media all and  (max-width : 1080px) {
-    margin-top: 0;
+    margin-top: 9px;
     margin-bottom: 0;
+    font-size: 16px;
   }
 `;
 const OrderCount = styled.h2`
   margin-left: 23px;
   font-weight: 600;
   font-family: "poppinssemibold";
+
+  @media all and (max-width : 1080px) {
+    font-size: 19px;
+  }
 `;
 const StaticRight = styled.div`
   width: 45%;
