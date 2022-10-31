@@ -1,10 +1,25 @@
 import React from "react";
 import styled from "styled-components";
+import Nav from "./Nav";
 
 function Statistics() {
   return (
     <>
       <MainContainer>
+        <HeaderContainer>
+          <NavBar>
+            <Nav />
+          </NavBar>
+          <BusinessLogo>
+            <LogoImage
+              src={
+                require("../Assets/Images/logo.svg")
+                  .default
+              }
+              alt="image"
+            />
+          </BusinessLogo>
+        </HeaderContainer>
         <SearchContainer>
           <SearchBar
             type="search"
@@ -143,6 +158,26 @@ const MainContainer = styled.section`
     left: 26%;
   }
 `;
+const HeaderContainer = styled.header`
+ display: none;
+  @media all and (max-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+`;
+const NavBar = styled.div``;
+const BusinessLogo = styled.div`
+@media all and (max-width: 480px){
+    width: 50%;
+}
+    
+`;
+const LogoImage = styled.img`
+    width: 100%;
+    display: block;
+`;
 const SearchContainer = styled.form`
   position: relative;
 `;
@@ -214,14 +249,14 @@ const StaticMiddleContainer = styled.div`
   width: 97%;
   align-items: center;
   margin: 0 auto;
-  @media all and (max-width:480px) {
+  @media all and (max-width: 480px) {
     width: 100%;
     flex-direction: column-reverse;
   }
 `;
 const StaticLeft = styled.ul`
   width: 51%;
-  @media all and (max-width:480px) {
+  @media all and (max-width: 480px) {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -302,10 +337,9 @@ const OrderCount = styled.h2`
 const StaticRight = styled.div`
   width: 42%;
 
-  @media all and (max-width:480px) {  
+  @media all and (max-width: 480px) {
     width: 60%;
     margin: 0 auto;
-
   }
 `;
 const GraphContainer = styled.div``;

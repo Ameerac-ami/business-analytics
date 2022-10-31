@@ -12,6 +12,7 @@ import Orders from "./Components/screens/Orders";
 import Payments from "./Components/screens/Payments";
 import Products from "./Components/screens/Products";
 import Chat from "./Components/screens/Chatbox/Chat";
+import PageNotFound from "./Components/screens/PageNotFound";
 
 function App() {
   return (
@@ -52,6 +53,10 @@ function App() {
             path="/chat"
             element={<Chat />}
           />
+          {/* <Route
+            path="*"
+            element={<PageNotFound />}
+          /> */}
         </Routes>
       </Router>
     </>
