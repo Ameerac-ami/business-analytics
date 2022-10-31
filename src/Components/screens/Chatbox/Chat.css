@@ -115,3 +115,22 @@
     width: 217px;
     }
   }
+  @media all and (max-width:768px) {
+    .App {
+      position: absolute;
+      right: 22px;
+      width: 68%;
+    }
+    .content .main .main_content .messages .bot-message {
+      width: 82%;
+    }
+    .content .bottom .btm .input input {
+      width: 294px;
+      height: 42px;
+    }
+    .content .bottom .btm .btn button {
+      height: 40px;
+      font-size: 16px;
+    }
+  
+  }

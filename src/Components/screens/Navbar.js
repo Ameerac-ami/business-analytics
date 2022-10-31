@@ -257,7 +257,7 @@ const Content = styled.p`
     width: 67%;
   }
   @media all and (max-width: 768px) {
-    width: 74%;
+    width: 91%;
   }
 `;
 const GoButton = styled.div`
@@ -299,8 +299,6 @@ const ArrowImage = styled.img`
   }
   @media (max-width: 768px) {
     top: -29px;
-    left: 79px;
-  }
-  @media (max-width: 640px) {
+    left: 80px;
   }
 `;

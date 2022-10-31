@@ -5,30 +5,35 @@ import { Link } from "react-router-dom";
 function HotSelling() {
   const Products = [
     {
+      id: 1,
       title: "Dominoes Coffee Table Game",
       sales: " 50k Sales",
       price: "$30",
       image: require("../Assets/Images/Product-1.jpg"),
     },
     {
+      id: 2,
       title: "Photive Wireless Speakers",
       sales: " 44k Sales",
       price: "$19",
       image: require("../Assets/Images/Product-2.jpg"),
     },
     {
+      id: 3,
       title: "Urbanears Lotson Speaker",
       sales: " 42k Sales",
       price: "$79",
       image: require("../Assets/Images/Product-3.jpg"),
     },
     {
+      id: 4,
       title: "Plattton 2 HeadPhones",
       sales: " 38k Sales",
       price: "$35",
       image: require("../Assets/Images/Product-4.jpg"),
     },
     {
+      id: 5,
       title: "Solar Hand Crank Radio",
       sales: " 30k Sales",
       price: "$28",
@@ -37,7 +42,7 @@ function HotSelling() {
   ];
   const renderProducts = () => {
     return Products.map((product) => (
-      <ListItems>
+      <ListItems key={product.id}>
         <ProductImage>
           <Product src={product.image} />
         </ProductImage>
@@ -224,6 +229,9 @@ const ListItems = styled.li`
 `;
 const ProductImage = styled.div`
   width: 20%;
+  @media all and (max-width: 768px) {
+    width: 18%;
+  }
 `;
 const Product = styled.img`
   display: block;
@@ -238,7 +246,7 @@ const Details = styled.div`
     margin: 0;
   }
   @media all and (max-width: 768px) {
-    margin-top: 17px;
+    margin-top: 8px;
   }
 `;
 const ProductName = styled.h4`
@@ -272,6 +280,10 @@ const Price = styled.h4`
     margin-top: 0;
     font-size: 12px;
   }
+  @media all and (max-width: 768px) {
+    margin-top: 9px;
+    font-size: 15px;
+  }
 `;
 const BottomContainer = styled.div`
   display: flex;
@@ -292,6 +304,9 @@ const Help = styled.h3`
 
   @media all and (max-width: 1080px) {
     font-size: 13px;
+  }
+  @media all and (max-width: 768px) {
+    font-size: 17px;
   }
 `;
 const ChatContainer = styled(Link)`
