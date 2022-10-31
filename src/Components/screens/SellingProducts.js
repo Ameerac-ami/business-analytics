@@ -156,6 +156,10 @@ const MainContainer = styled.section`
   position: absolute;
   top: 0;
   right: 0;
+
+  @media all and (max-width: 768px) {
+    display: none;
+  }
 `;
 const Head = styled.header`
   display: flex;
@@ -206,7 +210,7 @@ const SubHead = styled.div`
 const LeftHeading = styled.h3`
   font-family: "poppinsregular";
 
-  @media all and (max-width : 1080px) {
+  @media all and (max-width: 1080px) {
     font-size: 1.2em;
   }
 `;
@@ -216,14 +220,18 @@ const SeeAll = styled.span`
   font-weight: 600;
 `;
 const Orders = styled.ul`
-  padding: 20px 26px;
+  padding: 20px 20px 0 20px;
 `;
 const ListItems = styled.li`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media all and (max-width: 1080px) {
+    margin-bottom: 27px;
   }
 `;
 const ProductImage = styled.div`
@@ -238,8 +246,8 @@ const Details = styled.div`
   width: 64%;
   margin: 10px;
 
-  @media all and (max-width:1080px) {
-     margin: 0;
+  @media all and (max-width: 1080px) {
+    margin: 0;
   }
 `;
 const ProductName = styled.h4`
@@ -248,8 +256,8 @@ const ProductName = styled.h4`
   margin-bottom: 3px;
   font-size: 14px;
 
-  @media all and (max-width : 1080px) {
-    margin-bottom: 0; 
+  @media all and (max-width: 1080px) {
+    margin-bottom: 0;
     font-size: 11px;
   }
 `;
@@ -258,13 +266,18 @@ const Sales = styled.small`
   font-weight: 600;
   font-size: 11px;
 
-  @media all and (max-width : 1080px) {
-    font-size: 9px;
+  @media all and (max-width: 1080px) {
+    font-size: 10px;
   }
 `;
 const Price = styled.h4`
   width: 10%;
   margin-top: 6px;
+
+  @media all and (max-width: 1080px) {
+    margin-top: 0;
+    font-size: 12px;
+  }
 `;
 const BottomContainer = styled.div`
   display: flex;
@@ -283,7 +296,7 @@ const Help = styled.h3`
   width: 100%;
   font-size: 18px;
 
-  @media all and (max-width:1080px){
+  @media all and (max-width: 1080px) {
     font-size: 13px;
   }
 `;
@@ -322,7 +335,7 @@ const RightContainer = styled.div`
 `;
 const ChatImageContainer = styled.div`
   width: 79%;
-  margin-top: 41px;
+  margin-top: 32px;
 `;
 const ChatImage = styled.img`
   width: 100%;

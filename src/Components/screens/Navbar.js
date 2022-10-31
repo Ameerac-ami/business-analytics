@@ -120,15 +120,28 @@ const Maincontainer = styled.section`
   top: 0;
   left: 0;
   background: #ffffff;
+
+  @media all and (max-width: 768px) {
+    padding: 22px 8px 0 8px;
+  }
 `;
 const Head = styled.header`
   display: flex;
   justify-content: flex-start;
   padding: 16px;
+
+  @media all and (max-width: 980px) {
+    padding-top: 17px;
+  }
 `;
 const IconContainer = styled.div`
   width: 58%;
   margin: 0 41px;
+
+  @media all and (max-width: 768px) {
+    width: 87%;
+    margin: 0 auto;
+  }
 `;
 const Icon = styled.img`
   width: 100%;
@@ -138,23 +151,28 @@ const NavBody = styled.div`
   display: flex;
   padding: 24px;
   height: 70%;
+  @media all and (max-width: 768px) {
+    justify-content: center;
+    padding: 20px 0 0 0;
+  }
 `;
-const NavList = styled.ul``;
+const NavList = styled.ul`
+  @media all and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
 const ListItems = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 36px;
-  /* cursor: pointer; */
-  /* color: #938e8e;
-    &:hover {
-        color: #333988;
-    } */
   &:last-child {
     margin-bottom: 0;
   }
 
-  @media all and (max-width :1080px) {
+  @media all and (max-width: 1080px) {
     margin-bottom: 31px;
   }
 `;
@@ -168,7 +186,7 @@ const ListName = styled(Link)`
   &:hover {
     color: #333988;
   }
-  @media all and (max-width : 1080px) {
+  @media all and (max-width: 1080px) {
     font-size: 12px;
   }
 `;
@@ -182,6 +200,9 @@ const NavIconContainer = styled.div`
     width: 20px;
     margin-left: 39px;
   }
+  @media all and (max-width: 768px) {
+    display: none;
+  }
 `;
 const NavIcon = styled.img`
   display: block;
@@ -193,15 +214,19 @@ const BottomContainer = styled.div`
   width: 70%;
   height: 30vh;
   border-radius: 7px;
-  margin: 281px auto 0 auto;
+  margin: 152px auto 0 auto;
 
   @media all and (max-width: 1080px) {
-    margin: 182px auto 0 auto;
+    margin: 105px auto 0 auto;
   }
 `;
 const ImageContainer = styled.div`
   width: 75%;
   margin: 10px auto 0;
+
+  @media all and (max-width: 1080px) {
+    width: 69%;
+  }
 `;
 const Statistics = styled.img`
   display: block;
@@ -214,6 +239,10 @@ const Content = styled.p`
   text-align: center;
   width: 62%;
   margin: 5px auto 0;
+
+  @media all and (max-width: 1080px) {
+    width: 67%;
+  }
 `;
 const GoButton = styled.div`
   background: #333988;
@@ -226,16 +255,30 @@ const GoButton = styled.div`
   cursor: pointer;
   border-color: #333988;
   width: 46%;
+
+  @media all and (max-width: 1080px) {
+    padding: 7px 17px;
+    border-radius: 7px;
+  }
 `;
 const Image = styled.div`
   position: relative;
-  width: 20px;
+  width: 17px;
+
+  @media all and (max-width: 1080px) {
+    width: 14px;
+  }
 `;
 const ArrowImage = styled.img`
   position: absolute;
-  display: inline-block;
-  width: 63%;
-  top: -31px;
+  display: block;
+  width: 100%;
+  top: -33px;
   left: 106px;
   transform: rotate(270deg);
+
+  @media all and (max-width: 1080px) {
+    top: -28px;
+    left: 91px;
+  }
 `;

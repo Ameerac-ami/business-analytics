@@ -136,6 +136,10 @@ const MainContainer = styled.section`
   position: absolute;
   left: 23%;
   top: 3%;
+
+  @media all and (max-width:768px) {
+    width: 70%;
+  }
 `;
 const SearchContainer = styled.form`
   position: relative;
@@ -168,12 +172,16 @@ const HeadingContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media all and (max-width: 1080px) {
+    padding: 38px 25px 0;
+  }
 `;
 const LeftMainHeading = styled.h2`
   font-family: "poppinssemibold";
 
   @media all and (max-width: 1080px) {
-    font-size : 1.3em;
+    font-size: 1.3em;
   }
 `;
 const RightHeading = styled.form``;
@@ -192,16 +200,17 @@ const MonthOption = styled.option`
 const StaticMiddleContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  width: 97%;
   align-items: center;
+  margin: 0 auto;
 `;
 const StaticLeft = styled.ul`
   width: 51%;
 `;
 const StaticItem = styled.li`
   border-radius: 13px;
-  height: 147px;
-  margin: 26px 20px;
+  height: 139px;
+  margin: 26px 0 26px 15px;
   position: relative;
 
   &:first-child {
@@ -211,7 +220,7 @@ const StaticItem = styled.li`
     background: #e6f4ff;
   }
 
-  @media all and (max-width : 1080px) {
+  @media all and (max-width: 1080px) {
     height: 119px;
     margin: 14px 20px;
   }
@@ -244,7 +253,7 @@ const OrderStatus = styled.h3`
   font-weight: 600;
   font-family: "poppinsregular";
 
-  @media all and  (max-width : 1080px) {
+  @media all and (max-width: 1080px) {
     margin-top: 9px;
     margin-bottom: 0;
     font-size: 16px;
@@ -255,12 +264,12 @@ const OrderCount = styled.h2`
   font-weight: 600;
   font-family: "poppinssemibold";
 
-  @media all and (max-width : 1080px) {
+  @media all and (max-width: 1080px) {
     font-size: 19px;
   }
 `;
 const StaticRight = styled.div`
-  width: 45%;
+  width: 42%;
 `;
 const GraphContainer = styled.div``;
 const SalesGraph = styled.div`
@@ -272,22 +281,35 @@ const Graph = styled.img`
   border-radius: 13px;
 `;
 const StaticBottomContainer = styled.div`
-  padding: 40px 31px;
+  padding: 30px 31px 0;
   display: flex;
   justify-content: center;
 `;
 const StaticBottomLeft = styled.div``;
 const LeftHeading = styled.h3`
   font-family: "poppinsregular";
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   width: 70%;
   line-height: 1.5em;
+
+  @media all and (max-width: 1080px) {
+    font-size: 17px;
+    width: 79%;
+  }
 `;
 const AdImage = styled.div`
-  margin: 27px 0 0 35px;
+  margin: 21px 0 0 30px;
+  width: 37%;
+
+  @media all and (max-width: 1080px) {
+    width: 37%;
+  }
 `;
-const Image = styled.img``;
+const Image = styled.img`
+  width: 100%;
+  display: block;
+`;
 const StaticBottomRight = styled.div`
   display: flex;
   flex-direction: column;
@@ -299,7 +321,19 @@ const Heading = styled.h3`
   font-weight: 700;
   width: 55%;
   line-height: 1.5em;
+
+  @media all and (max-width: 1080px) {
+    width: 70%;
+  }
 `;
-const PersonHead = styled.div``;
-const Person = styled.img``;
-// const MainContainer = styled.section``;
+const PersonHead = styled.div`
+  width: 60%;
+
+  @media all and (max-width: 1080px) {
+    width: 56%;
+  }
+`;
+const Person = styled.img`
+  width: 100%;
+  display: block;
+`;
